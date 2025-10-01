@@ -1,0 +1,505 @@
+/* Simple Modern Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.error {
+    color: red;
+}
+
+/* workout details */
+.workout-detail {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.workout-detail h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*  EDIT SECTION*********************************************************************************** */
+.edit-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.edit-btn:hover {
+    background: #2980b9;
+}
+
+/* Initially hide the edit section */
+.edit-section {
+    display: none;
+    /* ... your existing edit-section styles ... */
+}
+
+.edit-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-section label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.edit-section input[type="text"],
+.edit-section select,
+.edit-section textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.set-rep-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.set-rep-inputs input {
+    width: 60px;
+}
+
+.save-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    background: #1a252f;
+}
+
+
+
+/* for youtube links************************************************************************************************/
+/* Make links more visible */
+.exercise-link a {
+    color: #ff0000;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+/* Highlight parentheses in edit mode */
+.moves-textarea {
+    color: #333;
+}
+.moves-textarea:focus {
+    box-shadow: 0 0 5px rgba(0,150,255,0.3);
+}
+
+.moves-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    line-height: 1.5;
+    min-height: 200px;
+}
+
+.moves-textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+}
+
+/* YOUTUBE***************************************************** */
+.move-item {
+    padding: 10px;
+    margin: 10px 0;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.exercise-link {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.exercise-link a {
+    color: #ff0000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.youtube-icon {
+    width: 16px;
+    height: 16px;
+    fill: #ff0000;
+}
+
+/* Edit mode formatting */
+textarea[name="description"] {
+    font-family: monospace;
+    white-space: pre;
+}
+/* calendar******************************************************** */
+/* General Styles */
+/* ===================== */
+/* CALENDAR BASE STYLING */
+/* ===================== */
+.calendar-header {
+    background-color: #2c3e50; /* Navy blue */
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.calendar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ================== */
+/* CALENDAR STRUCTURE */
+/* ================== */
+.calendar {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+.calendar th {
+    background-color: #2c3e50;
+    color: rgb(255, 255, 255);
+    padding: 12px 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.calendar td {
+    width: 14.28%; /* Equal width for 7 days */
+    height: 100px; /* Fixed height */
+    padding: 8px;
+    vertical-align: top;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* ================= */
+/* DAY CELL CONTENTS */
+/* ================= */
+.day-number {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: right;
+    color: #495057;
+}
+
+/* Add these to your existing CSS */
+.day {
+    position: relative;
+    height: 100px;
+    vertical-align: top;
+}
+
+/* Add this to your existing CSS */
+.today {
+    background-color: #600af4;  /* Light blue background */
+    border: 2px solid #1f09c3; /* Blue border */
+    border-radius: 4px;
+}
+
+.today .day-number {
+    color: #f1f1ee;          
+    font-weight: bold;
+}
+
+.workout-indicators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 5px;
+}
+
+.workout-indicator {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+    height: 25px;
+    position: relative;
+}
+
+.workout-indicator:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.delete-form {
+    display: none;
+    position: absolute;
+    right: -3px;       /* Reduced from -5px */
+    top: -3px;         /* Reduced from -5px */
+    padding: 0;        /* Added to ensure no extra space */
+    margin: 0;         /* Added to ensure no extra space */
+    line-height: 1;    /* Added for better alignment */
+}
+
+.workout-indicator:hover .delete-form {
+    display: block;
+}
+
+.delete-btn {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 12px;        /* Reduced from 15px */
+    height: 12px;       /* Reduced from 15px */
+    font-size: 8px;     /* Reduced from 10px */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+    margin: 0;          /* Added to remove any default margins */
+}
+
+.day-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.today .day-number {
+    background-color: #2c3e50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============== */
+/* UTILITY STYLES */
+/* ============== */
+.today {
+    background-color: #2f09c6;
+    border: 1px solid #bbdefb;
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.nav-button {
+    padding: 15px 8px;
+    width: 70px;
+    height: 30px;
+    background-color: #2c3e50;
+    color: white;
+    border: style;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: italic;
+}
+
+.nav-button:hover {
+    background-color: #2c3e50;
+}
+/************************************************************
+
+
+/* Workout Form */
+.workout-form {
+    width: 250px; /* Reduced from default */
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1px; /* Reduced spacing */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn.cancel {
+    background-color: #dc2026;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/****************************NOTES*/
+
+/* Note styles */
+.notes-container {
+    margin-top: 1px;
+    font-size: 15px;
+    color: #000000;
+    word-break: break-word;
+}
+
+/* Form textarea */
+#notes {
+    width: 90%;
+    padding: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/******************************FORM OPTIONS*********************/
+.form-options {
+    display: flex;
+    gap: 10px; /* Smaller gap */
+    margin-bottom: 1px;
+    font-size: 12px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
