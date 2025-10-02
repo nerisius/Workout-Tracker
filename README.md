@@ -17,7 +17,7 @@ This is a personal fitness management system that allows users to log their work
 
 - **Backend**: PHP
 - **Database**: MySQL (managed via phpMyAdmin)
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: CSS, JavaScript
 - **Database Admin**: phpMyAdmin
 
   ## Screenshots
